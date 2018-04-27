@@ -1,6 +1,6 @@
 local function run(msg)
     local data = load_data(_config.moderation.data)
-     if data[tostring(msg.to.id)]['settings']['lock_emoji'] == 'yes' then
+     if data[tostring(msg.to.id)]['settings']['lock_english'] == 'yes' then
 if msg.to.type == 'channel' and not is_momod(msg) then
 	delete_msg(msg.id,ok_cb,false)
 	else
@@ -10,30 +10,30 @@ if msg.to.type == 'channel' and not is_momod(msg) then
    end
 end
 return {patterns = {
-    "q",
-    "w",
-    "e",
-    "r",
-    "t",
-    "y",
-    "u",
-    "i",
-    "o",
-    "p",
-    "a",
-    "s",
-    "d",
-    "f",
-    "g",
-    "h",
-    "j",
-    "k",
-    "l",
-    "z",
-    "x",
-    "c",
-    "v",
-    "b",
-    "n",
-    "m",
+    "[A]",
+    "[B]",
+    "[C]",
+    "[D]",
+    "[E]",
+    "[F]",
+    "[G]",
+    "[H]",
+    "[I]",
+    "[J]",
+    "[K]",
+    "[L]",
+    "[M]",
+    "[N]",
+    "[O]",
+    "[P]",
+    "[Q]",
+    "[R]",
+    "[S]",
+    "[T]",
+    "[U]",
+    "[V]",
+    "[W]",
+    "[X]",
+    "[Y]",
+    "[Z]",
 }, run = run}
