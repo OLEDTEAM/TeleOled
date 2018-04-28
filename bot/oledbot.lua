@@ -245,7 +245,11 @@ function create_config( )
     "Joke",
     "Me",
     "MuteAll",
-    "rmsg"
+    "rmsg",
+    "CleanDeleted",
+    "Filter",
+    "Typing",
+    "SetTyping"
     },
     sudo_users = {498475110},--Sudo users
     moderation = {data = 'data/moderation.json'},
